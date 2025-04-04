@@ -48,6 +48,10 @@ def morse_api():
     morse = text_to_morse(input_text)
     return jsonify({'morse': morse})
 
+@app.route('/', methods=['GET'])
+def test_homepage():
+    return jsonify({'display': "Hello World!"})
+
 @app.route('/morsifyPDF', methods=['POST'])
 def morsify_pdf():
     if 'file' not in request.files:
@@ -123,4 +127,4 @@ def convert_video():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
