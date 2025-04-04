@@ -1,0 +1,7 @@
+Flask
+python-dotenv
+moviepy
+SpeechRecognition
+google-generativeai
+imageio[ffmpeg]
+PyPDF2
