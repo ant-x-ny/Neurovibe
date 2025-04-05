@@ -5,3 +5,4 @@ SpeechRecognition
 google-generativeai
 imageio[ffmpeg]
 PyPDF2
+gunicorn
